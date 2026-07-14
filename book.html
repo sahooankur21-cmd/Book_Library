@@ -5,24 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
 </head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(216, 151, 151);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 50%
+        margin: 0;
+    }
+    .header{
+        position: fixed;
+        font-family: sans-serif;
+        top: 0;
+        left:0;
+        right: 0;
+    }
+    .header-first{
+        font-size: 50px;
+        padding-left: 20px;
+    }
+    .header-secound{
+        font-size: 40px;
+        padding-left: 100px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #9d3f82ea;
+        height: 300px;
+        width: 300px;
+        padding: 70px;
+        row-gap: 15px;
+        border-radius: 50px;
+        box-shadow: 7px 8px 2px rgb(57, 40, 40);
+    }
+    .link-room{
+        padding: 0%;
+        margin: 0%;
+    }
+    .link{
+        color: rgb(14, 14, 13);
+        background-color: gray;
+        padding: 0;
+        margin: 0;
+        border-radius: 2px;
+    }
+    footer{
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(26, 133, 26, 0.249);
+    }
+    .last-footer{
+        display: flex;
+        justify-content: end;
+        margin: 5px;
+        padding: 2px;
+        font-size: small;
+        font-family:'Courier New', Courier, monospace, bold;
+    }
+</style>
 <body>
     <div>
-        <!-- Introducing the Book's Page -->
-        <h1>Welcome to Student's Asset !</h1>
+       <div class="header">
+         <!-- Introducing the Book's Page -->
+        <h1 class="header-first">Welcome </h1>
+        <h1 class="header-secound">To Student's Asset !</h1>
         <!-- Footer part for login and sing up  -->
-        <div>
-            <footer>
-                <!-- login page for user -->
-                <p>Have an Account ?</p>
-                <button><a href="login.html">LOGIN</a></button>
-                <br>
-                <!-- singup page for new user -->
-                <p>Don't have an Account ?</p>
-                <button><a href="singup.html">REGISTER</a></button>
-                <!-- About the web -->
-                <p>"All books, one library — always with you."</p>
-            </footer>
+       </div>
+        <div class="container">
+            <!-- login page for user -->
+            <p>Have an Account ?</p>
+            <button class="link"><a class="link" href="login.html">&nbsp;&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+            <br>
+            <!-- sing up page for new user -->
+            <p>Don't have an Account ?</p>
+            <button class="link"><a class="link" href="singup.html">&nbsp;&nbsp;&nbsp;&nbsp;SING IN&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
         </div>
+        <footer>
+            <!-- About the web -->
+            <p>"All books, one library — always with you."</p>
+            <p class="last-footer">Created By Error_A</p>
+        </footer>
     </div>
 </body>
 </html>
